@@ -1,0 +1,11 @@
+﻿@using ChartJS.Helpers.MVC;
+@{
+    ViewBag.Title = "Basic Line Chart";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>@ViewBag.Title</h1>
+
+@ViewBag.Chart
+<hr />
+@Html.ChartJS("chart123", (ChartTypeLine)ViewBag.chartObj)

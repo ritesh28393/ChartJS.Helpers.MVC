@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>chartjs.helpers.mvc</id>
+    <version>2.1.1</version>
+    <authors>Ritesh Raj</authors>
+    <owners>Ritesh Raj</owners>
+    <licenseUrl>https://github.com/ritesh28393/ChartJS.Helpers.MVC/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/ritesh28393/ChartJS.Helpers.MVC</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/ritesh28393/ChartJS.Helpers.MVC/master/chartjs.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Wrapper to generate charts using the popular Chart.Js library (http://www.chartjs.org). It also provides Asp.Net MVC HtmlHelper extension method for generating charts.</description>
+    <copyright>Copyright 2017</copyright>
+    <tags>helper extension chartjs chart javascript asp net mvc</tags>
+  </metadata>
+  <files>
+	<file src="E:\DummyCSharp\ChartJS.Helpers.MVC\bin\Debug\ChartJS.Helpers.MVC.dll" target="lib\net45\ChartJS.Helpers.MVC.dll"/>
+  </files>
+</package>
