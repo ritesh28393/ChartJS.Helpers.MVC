@@ -2,7 +2,7 @@
 
 Wrapper to generate charts using the popular latest Chart.Js library (http://www.chartjs.org). It also provides Asp.Net MVC HtmlHelper extension method for generating charts.
 
-**_Samples for all types of chart can be found at https://github.com/ritesh28393/ChartJS.Helpers.MVC/tree/master/SampleMVC_**
+*Samples for all types of chart can be found at https://github.com/ritesh28393/ChartJS.Helpers.MVC/tree/master/SampleMVC*
 
 ## Basic Line chart
 
@@ -85,7 +85,7 @@ ChartTypeLine LineChart = new ChartTypeLine()
 
 ## Vertical Bar chart
 
-```
+```C#
 ChartTypeBar VerticalBarChart = new ChartTypeBar()
             {
                 Data = new BarData()
@@ -130,7 +130,7 @@ ChartTypeBar VerticalBarChart = new ChartTypeBar()
 
 ## Pie chart
 
-```
+```C#
 ChartTypePie PieChart = new ChartTypePie()
             {
                 Data = new PieData()
@@ -164,7 +164,7 @@ ChartTypePie PieChart = new ChartTypePie()
 
 ## Doughnut chart 
 
-```           
+```C#           
 ChartTypeDoughnut DoughnutChart = new ChartTypeDoughnut()
             {
                 Data = new DoughnutData()
@@ -198,7 +198,7 @@ ChartTypeDoughnut DoughnutChart = new ChartTypeDoughnut()
 
 ## Polar Area chart 
 
-```            
+```C#            
 ChartTypePolarArea PolarAreaChart = new ChartTypePolarArea()
             {
                 Data = new PolarAreaData()
@@ -237,7 +237,7 @@ ChartTypePolarArea PolarAreaChart = new ChartTypePolarArea()
 
 ## Scatter chart 
 
-```            
+```C#            
 ChartTypeScatter ScatterChart = new ChartTypeScatter()
             {
                 Data = new ScatterData()
@@ -291,7 +291,7 @@ ChartTypeScatter ScatterChart = new ChartTypeScatter()
 
 ## Mix(line and bar) chart 
 
-```
+```C#
 ChartTypeMix MixChart = new ChartTypeMix()
             {
                 Data = new MixData()
