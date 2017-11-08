@@ -2,11 +2,11 @@
 
 Wrapper to generate charts using the popular latest Chart.Js library (http://www.chartjs.org). It also provides Asp.Net MVC HtmlHelper extension method for generating charts.
 
-**_ Samples for all types of chart can be found at https://github.com/ritesh28393/ChartJS.Helpers.MVC/tree/master/SampleMVC _**
+**_Samples for all types of chart can be found at https://github.com/ritesh28393/ChartJS.Helpers.MVC/tree/master/SampleMVC_**
 
 ## Basic Line chart
 
-```
+```C#
 ChartTypeLine LineChart = new ChartTypeLine()
             {
                 Data = new LineData()
