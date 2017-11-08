@@ -1,8 +1,12 @@
+#ChartJS.Helpers.MVC
+
 Wrapper to generate charts using the popular latest Chart.Js library (http://www.chartjs.org). It also provides Asp.Net MVC HtmlHelper extension method for generating charts.
 
 Samples for all types of chart can be found at https://github.com/ritesh28393/ChartJS.Helpers.MVC/tree/master/SampleMVC
 
-++++++++++++++++++++++ Basic Line chart ++++++++++++++++++++++
+##++++++++++++++++++++++ Basic Line chart ++++++++++++++++++++++
+
+```
 ChartTypeLine LineChart = new ChartTypeLine()
             {
                 Data = new LineData()
@@ -77,7 +81,8 @@ ChartTypeLine LineChart = new ChartTypeLine()
                 }
             };
             ViewBag.LineChart = new MvcHtmlString(chart.Draw("myLineChart"));
-            
+```
+
 ++++++++++++++++++++++ Basic Vertical Bar chart ++++++++++++++++++++++
 ChartTypeBar VerticalBarChart = new ChartTypeBar()
             {
