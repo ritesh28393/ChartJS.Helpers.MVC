@@ -1,4 +1,4 @@
-# ChartJS.Helpers.MVC
+# ChartJS.Helpers.MVC ![chartjs](https://raw.githubusercontent.com/ritesh28393/ChartJS.Helpers.MVC/master/chartjs.png)
 
 [![nuget](https://img.shields.io/badge/nuget-V3.1.1-brightgreen.svg?style=flat-square&maxAge=3600)](https://www.nuget.org/packages/ChartJS.Helpers.MVC)
 
