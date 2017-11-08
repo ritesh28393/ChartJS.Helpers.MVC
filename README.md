@@ -4,7 +4,7 @@ Wrapper to generate charts using the popular latest Chart.Js library (http://www
 
 Samples for all types of chart can be found at https://github.com/ritesh28393/ChartJS.Helpers.MVC/tree/master/SampleMVC
 
-## ++++++++++++++++++++++ Basic Line chart ++++++++++++++++++++++
+###### Basic Line chart
 
 ```
 ChartTypeLine LineChart = new ChartTypeLine()
@@ -83,7 +83,7 @@ ChartTypeLine LineChart = new ChartTypeLine()
             ViewBag.LineChart = new MvcHtmlString(chart.Draw("myLineChart"));
 ```
 
-## ++++++++++++++++++++++ Vertical Bar chart ++++++++++++++++++++++
+###### Vertical Bar chart
 
 ```
 ChartTypeBar VerticalBarChart = new ChartTypeBar()
@@ -128,7 +128,7 @@ ChartTypeBar VerticalBarChart = new ChartTypeBar()
             ViewBag.VerticalBarChart = new MvcHtmlString(chart.Draw("myVerticalBarChart"));
 ```
 
-## ++++++++++++++++++++++ Pie chart ++++++++++++++++++++++
+###### Pie chart
 
 ```
 ChartTypePie PieChart = new ChartTypePie()
@@ -162,7 +162,7 @@ ChartTypePie PieChart = new ChartTypePie()
             ViewBag.PieChart = new MvcHtmlString(chart.Draw("myPieChart"));
  ```
 
-## ++++++++++++++++++++++ Doughnut chart ++++++++++++++++++++++
+###### Doughnut chart 
 
 ```           
 ChartTypeDoughnut DoughnutChart = new ChartTypeDoughnut()
@@ -196,7 +196,7 @@ ChartTypeDoughnut DoughnutChart = new ChartTypeDoughnut()
             ViewBag.DoughnutChart = new MvcHtmlString(chart.Draw("myDoughnutChart"));
 ```
 
-## ++++++++++++++++++++++ Polar Area chart ++++++++++++++++++++++
+###### Polar Area chart 
 
 ```            
 ChartTypePolarArea PolarAreaChart = new ChartTypePolarArea()
@@ -235,7 +235,7 @@ ChartTypePolarArea PolarAreaChart = new ChartTypePolarArea()
             ViewBag.PolarAreaChart = new MvcHtmlString(chart.Draw("myPolarAreaChart"));
 ```
 
-## ++++++++++++++++++++++ Scatter chart ++++++++++++++++++++++
+###### Scatter chart 
 
 ```            
 ChartTypeScatter ScatterChart = new ChartTypeScatter()
@@ -289,7 +289,7 @@ ChartTypeScatter ScatterChart = new ChartTypeScatter()
             ViewBag.ScatterChart = new MvcHtmlString(chart.Draw("myScatterChart"));
 ```
 
-## ++++++++++++++++++++++ Mix(line and bar) chart ++++++++++++++++++++++
+###### Mix(line and bar) chart 
 
 ```
 ChartTypeMix MixChart = new ChartTypeMix()
