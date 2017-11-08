@@ -1,4 +1,4 @@
-# ChartJS.Helpers.MVC <img src="https://raw.githubusercontent.com/ritesh28393/ChartJS.Helpers.MVC/master/chartjs.png" alt="chartjs" style="width: 40px; height: 40px; vertical-align: bottom;"/>
+# ChartJS.Helpers.MVC <img src="https://raw.githubusercontent.com/ritesh28393/ChartJS.Helpers.MVC/master/chartjs.png" alt="chartjs" height="40" width="40" align="bottom"/>
 
 [![nuget](https://img.shields.io/badge/nuget-V3.1.1-brightgreen.svg?style=flat-square&maxAge=3600)](https://www.nuget.org/packages/ChartJS.Helpers.MVC)
 
