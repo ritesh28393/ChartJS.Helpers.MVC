@@ -23,7 +23,6 @@ namespace ChartJS.Helpers.MVC
             { "BSteppedLine","steppedLine"},
             { "SSteppedLine","steppedLine"},
         };
-        private static FileStream stream = new FileStream(@"C:\Users\Ritesh Raj\Documents\temp.txt",FileMode.Append);
         /// <summary>
         /// convert to JSON
         /// </summary>
@@ -31,18 +30,16 @@ namespace ChartJS.Helpers.MVC
         /// <param name="indent">specify the indent</param>
         /// <param name="skipKeys">specify the keys which need to be omitted</param>
         /// <returns>returns JSON of the object passed</returns>
-        public static string ToJSON(object data, int indent = 0, string[] skipKeys = null)
+        public static string ToJSON(object data, int indent = 0)
         {
-            skipKeys = skipKeys ?? new string[0];
             string json = "";
             Type instanceType = data.GetType();
             PropertyInfo[] properties = instanceType.GetProperties();
             foreach (PropertyInfo property in properties)
             {
                 string key = property.Name;
-                if (skipKeys.Any(ele => ele.Contains(key)) || property.GetValue(data) == null)
+                if (property.GetValue(data) == null)
                 {
-                    //if any string in skipKeys is key, then skip that property
                     //if the value of the property is null, then skip that property
                     continue;
                 }
@@ -56,10 +53,6 @@ namespace ChartJS.Helpers.MVC
                     }
                 }
                 key = char.ToLower(key[0]).ToString() + key.Substring(1);
-
-                string writeToFile = key + " : " + property.GetValue(data) + "\n";
-                byte[] byteArray = System.Text.Encoding.ASCII.GetBytes(writeToFile);
-                stream.Write(byteArray, 0, byteArray.Length);
 
                 string value = "";
                 if (property.PropertyType == typeof(string[]))
@@ -101,14 +94,14 @@ namespace ChartJS.Helpers.MVC
                     value = "[";
                     foreach (object item in objArray)
                     {
-                        value += "{\n" + ToJSON(item, ++indent, skipKeys) + Indent(indent) + "},";
+                        value += "{\n" + ToJSON(item, ++indent) + Indent(indent) + "},";
                         --indent;
                     }
                     value = value.TrimEnd(',') + "]";
                 }
                 else//complex_type
                 {
-                    value = "{\n" + ToJSON(property.GetValue(data), ++indent, skipKeys);
+                    value = "{\n" + ToJSON(property.GetValue(data), ++indent);
                     --indent;
                     value += Indent(indent) + "}";
                 }
