@@ -1,6 +1,6 @@
 # <img src="https://raw.githubusercontent.com/ritesh28393/ChartJS.Helpers.MVC/master/chartjs.png" alt="chartjs" height="45" width="45" align="top"/> ChartJS.Helpers.MVC
 
-[![nuget](https://img.shields.io/badge/nuget-V3.1.1-brightgreen.svg?style=flat-square&maxAge=3600)](https://www.nuget.org/packages/ChartJS.Helpers.MVC)
+[![nuget](https://img.shields.io/badge/nuget-V3.3.1-brightgreen.svg?style=flat-square&maxAge=3600)](https://www.nuget.org/packages/ChartJS.Helpers.MVC)
 
 Wrapper to generate charts using the popular latest Chart.Js library (http://www.chartjs.org). It also provides Asp.Net MVC HtmlHelper extension method for generating charts.
 
